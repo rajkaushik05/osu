@@ -1,0 +1,389 @@
+@import 'main-1.css';
+
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+a {
+    color: #00e;
+}
+
+a:visited {
+    color: #551a8b;
+}
+
+a:hover {
+    color: #06e;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/* Prevent callout */
+
+.nocallout {
+    -webkit-touch-callout: none;
+}
+
+.pressed {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+
+textarea[contenteditable] {
+    -webkit-appearance: none;
+}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if
+   they have been set as display: none */
+
+.gifhidden {
+    position: absolute;
+    left: -100%;
+}
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: 0;
+    direction: ltr;
+    display: block;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -999em;
+}
+
+.ir br {
+    display: none;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/**
+ * Clearfix helper
+ * Used to contain floats: h5bp.com/q
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   Theses examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+body {
+  background: #eee;
+  padding: 20px;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  border: solid 1px #ddd;
+  box-sizing: border-box;
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  padding:20px 0;
+}
+
+.form-field-wrap {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.form-field-wrap li {
+  display: block;
+  padding: 10px 0;
+  border-bottom: solid 1px #ced5d9;
+  padding: 20px;
+}
+
+.form-field-wrap li:nth-child(even) {
+  background: #edfbff;
+}
+
+.form-field-wrap li .field-wrap {
+  display: block;
+  width: 100%;
+  height: 40px;
+}
+
+li.list-header {
+}
+
+h2 {
+  margin: 0;
+  color: #326fb4;
+}
+/* input[type=text],
+input[type=email],
+input[type=tel] {
+  display: block;
+  box-sizing: border-box;
+  border: solid 1px #ddd;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  border-radius: 10px;
+  outline: none;
+} */
+
+.form-field-wrap li label,
+.form-field-wrap li .label {
+  display: inline-block;
+  width: 35%;
+  box-sizing: border-box;
+  vertical-align: top;
+  height: 40px;
+  line-height: 40px;
+  color: #3f748d;
+}
+
+select {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  border: none;
+  background: transparent;
+  border: solid 1px #ddd;
+  outline: none;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.form-field-wrap li .field-wrap {
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+
+.top-nav {
+  position: fixed;
+  height: 60px;
+  left: 0;
+  right: 0;
+  background: #fff;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  top: 0;
+}
+
+.top-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.top-nav ul li {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 10px;
+  border-left: solid 1px #eee;
+}
+
+.top-nav ul li:last-child {
+  border-right: solid 1px #eee;
+}
+
+.row {
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.row .col {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.row .col .col-wrap {
+  background: #fff;
+  padding: 15px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+
+.row .col .col-wrap h4 {
+  padding: 0;
+  margin: 0;
+}
+.row .col .col-wrap a {
+  height: 30px;
+  line-height: 30px;
+}
+
+a, a:link, a:active, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.box-wrap {
+  min-height: 180px;
+}
+
+.box-wrap ul {
+  padding: 0; 
+  margin: 0;
+  list-style: none;
+  font-size: 12px;
+}
+
+.box-wrap h3 {
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.box-wrap h3 strong {
+  font-weight: bold;
+}
+
+
+.date-time {
+  display: block;
+  font-size: 11px;
+  margin: 0;
+}
+
+.box-wrap ul li {
+  display: block;
+  border-bottom: solid 1px #eee;
+  padding: 10px 0;
+
+}
