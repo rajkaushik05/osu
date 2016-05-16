@@ -166,17 +166,26 @@ label {
 	height: 16px;
 	background: transparent url('../img/delete.png') center center no-repeat;
 	display: inline-block;
+	margin-left: 5px;
 }
 
 .listed-subject {
-	list-style-image: url('../img/list.png');
-	margin-top: 10px;
-    padding-left: 24px;
+	padding: 0;
+}
+
+.how-to-improve .listed-subject {
+	margin: 0;
 }
 
 .listed-subject li {
-	padding: 6px 0;
-	color: #B7B7B7;
+	padding: 4px 15px;
+    color: #B7B7B7;
+    display: inline-block;
+    background-color: #f9f9f9;
+    margin-right: 5px;
+    text-transform: capitalize;
+    border-radius: 15px;
+    margin-bottom: 15px;
 }
 
 .input-group label {
@@ -250,10 +259,6 @@ label {
 	left: 0;
 	line-height: 30px;
 	text-align: center;
-}
-
-.how-to-improve .listed-subject {
-	margin: 0;
 }
 
 .rating-block input[type="radio"] {
