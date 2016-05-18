@@ -167,6 +167,8 @@ label {
 	background: transparent url('../img/delete.png') center center no-repeat;
 	display: inline-block;
 	margin-left: 5px;
+	vertical-align: middle;
+	cursor: pointer;
 }
 
 .listed-subject {
@@ -183,7 +185,6 @@ label {
     display: inline-block;
     background-color: #f9f9f9;
     margin-right: 5px;
-    text-transform: capitalize;
     border-radius: 15px;
     margin-bottom: 15px;
 }
