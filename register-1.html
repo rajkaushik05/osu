@@ -2,8 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title></title>
-
+        <title>Student Registration | OSU</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -12,12 +11,12 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="wrapper">
-            <form action="">
+        <div class="wrapper register-second-form-fields">
+            <form action="register-2.html">
                 <div class="form-fields-wrap personal-info">
                     <div class="padding">
                         <div class="progress-bar-container ">
-                            <div class="my-bar success-bg" style="width:33%">33%</div>
+                            <div class="my-bar success-bg" style="width:36%">36%</div>
                         </div>
                     </div>
                     <div class="padding field-headding">
@@ -26,11 +25,11 @@
                     <div class="row form-group">
                         <div class="col-6">
                             <label for="candidateNumber">Your Phone Number</label>
-                            <input type="text" id="candidateNumber" name="candidateNumber" class="form-control">
+                            <input type="text" id="candidateNumber" name="candidateNumber" class="form-control" required>
                         </div>
                         <div class="col-6">
                             <label for="candidateEmail">Your Email ID</label>
-                            <input type="email" id="candidateEmail" name="candidateEmail" class="form-control">
+                            <input type="email" id="candidateEmail" name="candidateEmail" class="form-control" required>
                         </div>
                         <p class="padding small-text">(We will be using your email ID to create a free account at http://www.onesteupup.in for exclusive freebies)</p>
                     </div>
@@ -47,35 +46,35 @@
                     </div>
                     <div class="row">
                         <div class="col-5 form-group">
-                            <input type="text" id="momPhone" name="momPhone" class="form-control">
+                            <input type="text" id="momPhone" name="momPhone" class="form-control" required>
                         </div>
                         <div class="col-2 form-group">
                             <label for="">Mom</label>
                         </div>
                         <div class="col-5 form-group">
-                            <input type="email" id="momEmail" name="momEmail" class="form-control">
+                            <input type="email" id="momEmail" name="momEmail" class="form-control" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-5 form-group">
-                            <input type="text" id="dadPhone" name="dadPhone" class="form-control">
+                            <input type="text" id="dadPhone" name="dadPhone" class="form-control" required>
                         </div>
                         <div class="col-2 form-group">
                             <label for="">Dad</label>
                         </div>
                         <div class="col-5 form-group">
-                            <input type="email" id="dadEmail" name="dadEmail" class="form-control">
+                            <input type="email" id="dadEmail" name="dadEmail" class="form-control" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-5 form-group">
-                            <input type="text" id="guardianPhone" name="guardianPhone" class="form-control">
+                            <input type="text" id="guardianPhone" name="guardianPhone" class="form-control" required>
                         </div>
                         <div class="col-2 form-group">
                             <label for="">Guardian</label>
                         </div>
                         <div class="col-5 form-group">
-                            <input type="email" id="momEmail" name="momEmail" class="form-control">
+                            <input type="email" id="guardianEmail" name="guardianEmail" class="form-control" required>
                         </div>
                     </div>
                     <div class="row">
@@ -83,12 +82,12 @@
                     </div>  
                     <div class="action padding">
                         <a href="register.html"class="btn btn-default back-btn"><span class="right-arrow"></span> Back </a>
-                        <a href="register-2.html"class="btn btn-primary">Yes, Show me a video <span class="right-arrow"></span> </a>
+                        <button class="btn btn-primary" id="registerSecondFormFieldsNext">Yes, Show me a video <span class="right-arrow"></span> </button>
                     </div>                
                 </div>
             </form>
         </div>
-
+        <script src="js/vendor/jquery-2.1.0.js"></script>
         <script src="js/main.js"></script>
     </body>
 </html>

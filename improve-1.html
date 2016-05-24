@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Student Feedback | OSU</title>
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -12,8 +12,8 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="wrapper">
-            <form action="">
+        <div class="wrapper improve-second-form-fields editable-fields">
+            <form action="improve-2.html">
                 <div class="form-fields-wrap how-to-improve">
                     <div class="padding">
                         <div class="progress-bar-container ">
@@ -25,19 +25,19 @@
                     </div>
                     <div class="padding rating form-group">
                         <label for="">Rate the workshop</label>
-                        <div class="rating-block">
-                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!"></label>
+                        <div class="rating-block" id="workshopStarRating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!" required></label>
                             <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
                             <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh"></label>
                             <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad"></label>
-                            <input type="radio" id="star1" name="rating" value="1" checked="checked" /><label for="star1" title="Sucks big time"></label>
+                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time"></label>
                         </div>
                     </div>
                     
                     <div class="padding form-group">
                         <label for="">What did you like about the workshop?</label>
                         <div class="input-group" id="workshopRadioGroup">
-                            <label for="checkFluent"><input type="radio" id="checkFluent" checked="checked" name="workshopFeedback"> The speaker was fluent</label>
+                            <label for="checkFluent"><input type="radio" id="checkFluent" name="workshopFeedback" required> The speaker was fluent</label>
                             <label for="checkConceptWell"><input type="radio" id="checkConceptWell" name="workshopFeedback"> The speaker explained concepts well</label>
                             <label for="checkConnectNot"><input type="radio" id="checkConnectNot" name="workshopFeedback"> We could connect with the speakers well</label>
                             <label for="checkNotLike"><input type="radio" id="checkNotLike" name="workshopFeedback"> Nothing. I didn't like the workshop</label>
@@ -47,13 +47,13 @@
                         <label for="">What did you NOT like about the workshop?</label>
                         <textarea name="" id="" cols="30" rows="2"></textarea>
                     </div>
-                    <div class="padding form-group" id="">
+                    <div class="padding form-group">
                         <label for="">Any other comments for us</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea name="" id="workShopOtherComment" cols="30" rows="2" required="required"></textarea>
                     </div>
                     <div class="action padding">
-                        <a href="improve.html"class="btn btn-default back-btn"><span class="right-arrow"></span> Back </a>
-                        <a href="improve-2.html"class="btn btn-primary">Next <span class="right-arrow"></span> </a>
+                        <a href="improve.html" class="btn btn-default back-btn"><span class="right-arrow"></span> Back </a>
+                        <button id="improveSecondFormFieldsNext" class="btn btn-primary">Next <span class="right-arrow"></span> </button>
                     </div>                
                 </div>
             </form>

@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Student Feedback | OSU</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -11,29 +11,38 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="wrapper">
-            <form action="">
+        <div class="wrapper improve-first-form-fields editable-fields">
+            <form action="improve-1.html">
                 <div class="form-fields-wrap how-to-improve">
                     <div class="padding">
                         <div class="progress-bar-container ">
-                            <div class="my-bar success-bg" style="width:0%">0%</div>
+                            <div class="my-bar success-bg" style="width:33%">33%</div>
                         </div>
                     </div>
                     <div class="padding field-headding">
                         <h2>Tell Us how we can improve</h2>
                     </div>
                     <div class="padding form-group">
-                        <label for="">Your Name</label>
-                        <input type="text" class="form-control" value="Shashank Merothiya"  >
+                        <label for="updateYourName">Your Name</label>
+                        <div class="editable">
+                            <input type="text" class="form-control" id="updateYourName" value="Shashank Merothiya" disabled="enabled" required>
+                            <span class="field-undo" title="Undo"></span><span class="field-edit" title="Edit"></span>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
-                            <label for="">Class and Section</label>
-                            <input type="text" id="" name="" class="form-control" value="XI F">
+                            <label for="updateClassAndSection">Class and Section</label>
+                            <div class="editable">
+                                <input type="text" id="updateClassAndSection" name="" class="form-control" value="XI F"  disabled="enabled" required>
+                                <span class="field-undo" title="Undo"></span><span class="field-edit" title="Edit"></span>
+                            </div>
                         </div>
                         <div class="col-6 form-group">
-                            <label for="">School</label>
-                            <input type="text" id="" name="" class="form-control" value="Gyan Bharti School">
+                            <label for="updateSchoolName">School</label>
+                            <div class="editable">
+                                <input type="text" id="updateSchoolName" name="" class="form-control" value="Gyan Bharti School" disabled="enabled" required>
+                                <span class="field-undo" title="Undo"></span><span class="field-edit" title="Edit"></span>
+                            </div>
                         </div>
                     </div>
                     <div class="row">
@@ -41,12 +50,11 @@
                             <label for="">Changed mind on subjects?</label>
                             <ul class="listed-subject" id="changeMindSubjectListed1">
                                 <li>PCM with economics<span class="btn-delete"></span></li>
-                                <li>Text-text hello to<span class="btn-delete"></span></li>
-                                <li>Lorem ipsum-1 <span class="btn-delete"></span></li>
+                                <li>Lorem ipsum<span class="btn-delete"></span></li>
                             </ul>
                         </div>
                         <div class="col-6 form-group">
-                            <label for="">Changed mind on subjects?</label>
+                            <label for="changeMindSubjectListed2">Changed mind on subjects?</label>
                             <ul class="listed-subject" id="changeMindSubjectListed2">
                                 <li>Electrical engineer <span class="btn-delete"></span></li>
                                 <li>IT professional <span class="btn-delete"></span></li>
@@ -55,15 +63,17 @@
                     </div>
                     <div class="row">
                         <div class="col-6">
-                            <label for="">Or choose something else</label>
+                            <label for="changeMindSubjectListedAdd1">Or choose something else</label>
                             <select name="" class="form-control" id="changeMindSubjectListedAdd1">
+                                <option selected disabled>-- Select --</option>
                                 <option value="Lorem_ipsum-1">Lorem ipsum-1</option>
                                 <option value="Lorem_ipsum-2">Lorem ipsum-2</option>
                             </select>
                         </div>
                         <div class="col-6">
-                            <label for="">Or choose something else</label>
+                            <label for="changeMindSubjectListedAdd2">Or choose something else</label>
                             <select name="" class="form-control" id="changeMindSubjectListedAdd2">
+                                <option selected disabled>-- Select --</option>
                                 <option value="Lorem_ipsum-3">Lorem ipsum-3</option>
                                 <option value="Lorem_ipsum-4">Lorem ipsum-4</option>
                             </select>
@@ -73,7 +83,7 @@
                         <p class="success">If everything look ok, lets skip to next section</p>
                     </div>
                     <div class="action padding">
-                        <a href="improve-1.html"class="btn btn-primary">Next <span class="right-arrow"></span> </a>
+                        <button class="btn btn-primary" id="improveFirstFormFieldsNext">Next <span class="right-arrow"></span> </button>
                     </div>                
                 </div>
             </form>

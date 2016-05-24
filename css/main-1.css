@@ -258,8 +258,10 @@ label {
 	position: absolute;
 	top: 0;
 	left: 0;
+	width: 0;
 	line-height: 30px;
 	text-align: center;
+	transition: all .5s;
 }
 
 .rating-block input[type="radio"] {
@@ -267,6 +269,11 @@ label {
 }
 
 .rating-block input[type="radio"]:checked + label:before {
+	content: "\2605";
+	color: #FFD700;
+}
+
+.rating-block input[type="radio"].active + label:before {
 	content: "\2605";
 	color: #FFD700;
 }
@@ -308,4 +315,60 @@ label {
 #notLikeComment,
 #notLikeCommentCounselor {
 	display: none;
+}
+
+#defaultSubjectsRegister,
+#additionalSubjectRegister {
+	display: none;
+}
+.alert-error {
+	margin-top: 0;
+	color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    font-size: 13px;
+    padding: 5px 10px;
+    display: none;
+}
+.alert-success {
+	margin-top: 0;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    font-size: 13px;
+    padding: 5px 10px;
+    alert-error
+}
+
+:disabled {
+	background-color: #f9f9f9;
+}
+
+.field-edit {
+	background: url('../img/edit.png')center center no-repeat;
+}
+
+.field-undo {
+	display: none;
+	background: url('../img/undo.png')center center no-repeat;
+}
+
+.editable {
+	position: relative;
+}
+
+.editable input[type="text"]{
+	padding-right: 45px;
+}
+
+.editable span[class^="field-"]{
+	position: absolute;
+	right: 0;
+	top: 0;	
+	border-left: 1px solid #ddd;
+	height: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+	width: 38px;
+	cursor: pointer;
 }

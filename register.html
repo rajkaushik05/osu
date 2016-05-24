@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Student Registration | OSU</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -10,63 +10,62 @@
     <body>
 
         <!-- Add your site or application content here -->
-
-        <div class="wrapper">
-            <form action="">
+        <form action="register-1.html">
+            <div class="wrapper register-first-form-fields">
                 <div class="form-fields-wrap">
                     <div class="padding">
                         <div class="progress-bar-container ">
-                            <div class="my-bar success-bg" style="width:0%">0%</div>
+                            <div class="my-bar success-bg" >0%</div>
                         </div>
                     </div>
+
                     <div class="padding field-headding">
                         <h2>Tell Us about yourselves</h2>
                     </div>
                     <div class="padding form-group">
                         <label for="yourName">Your Name</label>
-                        <input type="text" id="yourName" name="yourName" class="form-control">
+                        <input type="text" value="" id="yourName" name="yourName" class="form-control" required>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
                             <label for="classSection">Class and Section</label>
-                            <input type="text" id="classSection" name="classSection" class="form-control">
+                            <input type="text" value="" id="classSection" name="classSection" class="form-control" required>
                         </div>
                         <div class="col-6 form-group">
                             <label for="schoolText">School</label>
-                            <input type="text" id="schoolText" name="schoolText" class="form-control">
+                            <input type="text" id="schoolText" name="schoolText" class="form-control" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-6 form-group">
-                            <label for="considerSubject">Subject you are considering for Class XI</label>
-                            <select name="considerSubject" id="considerSubject" class="form-control">
-                                <option value="">Commerce with Maths</option>
-                                <option value="">Commerce with Maths</option>
-                                <option value="">Commerce with Maths</option>
+                            <label for="considerSubjectRegister">Subject you are considering for Class XI</label>
+                            <select name="considerSubject" id="considerSubjectRegister" class="form-control" required="required">
+                                <option disabled selected>-- Select -- </option>
+                                <option value="commerce_with_maths">Commerce with Maths</option>
+                                <option value="dd">lorrem</option>
                             </select>
                             <ul class="listed-subject" id="defaultSubjectsRegister">
                                 <li>History <span class="btn-delete"></span></li>
                                 <li>Economics <span class="btn-delete"></span></li>
                                 <li>Maths <span class="btn-delete"></span></li>
                             </ul>
-                            <select name="additionalSubjectRegister" id="additionalSubjectRegister" class="form-control">
-                                <option disabled selected value>-- Additional Subject -- </option>
+                            <select name="additionalSubjectRegister" id="additionalSubjectRegister" class="form-control" required>
+                                <option disabled selected>-- Additional Subject -- </option>
                                 <option value="Physics">Physics</option>
                                 <option value="Bio">Bio</option>
                             </select>
                         </div>
                         <div class="col-6 form-group">
                             <label for="interestedIn">Careers you are interested in</label>
-                            <input type="text" id="interestedIn" name="interestedIn" class="form-control">
+                            <input type="text" id="interestedIn" name="interestedIn" class="form-control" required>
                         </div>
                     </div>    
                     <div class="action padding">
-                        <a href="register-1.html"class="btn btn-primary">Next <span class="right-arrow"></span> </a>
+                        <button class="btn btn-primary" id="registerFirstFormFieldsNext">Next <span class="right-arrow"></span> </button> 
                     </div>                
                 </div>
-            </form>
-        </div>
-
+            </div>
+        </form>
         <script src="js/vendor/jquery-2.1.0.js"></script>
         <script src="js/main.js"></script>
         

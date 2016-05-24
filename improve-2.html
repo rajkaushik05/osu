@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Student Feedback | OSU</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -11,8 +11,8 @@
 
         <!-- Add your site or application content here -->
 
-        <div class="wrapper">
-            <form action="">
+        <div class="wrapper improve-third-form-fields editable-fields">
+            <form action="improve-1.html">
                 <div class="form-fields-wrap how-to-improve">
                     <div class="padding">
                         <div class="progress-bar-container ">
@@ -24,19 +24,19 @@
                     </div>
                     <div class="padding rating form-group">
                         <label for="">Rate the Counseling session</label>
-                        <div class="rating-block">
-                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!"></label>
+                        <div class="rating-block" id="counselorStarRating">
+                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Rocks!" required></label>
                             <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good"></label>
                             <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh"></label>
                             <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad"></label>
-                            <input type="radio" id="star1" name="rating" value="1" checked="checked" /><label for="star1" title="Sucks big time"></label>
+                            <input type="radio" id="star1" name="rating" value="1"/><label for="star1" title="Sucks big time"></label>
                         </div>
                     </div>
                     
                     <div class="padding form-group">
                         <label for="">What did you like about counseling?</label>
                         <div class="input-group" id="counselorRadioGroup">
-                            <label for="checkFluentCounselor"><input type="radio" name="couselorFeedback" id="checkFluentCounselor" checked="checked"> I liked how the counselor explained every career</label>
+                            <label for="checkFluentCounselor"><input type="radio" name="couselorFeedback" id="checkFluentCounselor" required> I liked how the counselor explained every career</label>
                             <label for="checkConceptWellCounselor"><input type="radio" name="couselorFeedback" id="checkConceptWellCounselor"> The counselor could answer all my queries</label>
                             <label for="checkConnectNotCounselor"><input type="radio" name="couselorFeedback" id="checkConnectNotCounselor"> I am not aware of the impact of my choices</label>
                             <label for="checkNotLikeCounselor"><input type="radio" name="couselorFeedback" id="checkNotLikeCounselor"> Nothing. I don't like the counseling</label>
@@ -48,11 +48,11 @@
                     </div>
                     <div class="padding form-group" id="">
                         <label for="">Any other comments for us</label>
-                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                        <textarea name="" id="counselorOtherComment" cols="30" rows="2" required></textarea>
                     </div>
                     <div class="action padding">
-                        <a href="improve-1.html"class="btn btn-default back-btn"><span class="right-arrow"></span> Back </a>
-                        <button class="btn btn-primary">Done ! <span class="right-arrow"></span> </button>
+                        <a href="improve-1.html" class="btn btn-default back-btn"><span class="right-arrow"></span> Back </a>
+                        <button class="btn btn-primary" id="improveThirdFormFieldsNext">Done ! <span class="right-arrow"></span> </button>
                     </div>                
                 </div>
             </form>
